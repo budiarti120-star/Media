@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Media Pembelajaran Informatika</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-primary text-white py-4 mb-4 shadow">
+    <div class="container text-center">
+      <h1 class="text-3xl font-bold">Media Pembelajaran Informatika</h1>
+      <p class="text-sm">Belajar lebih mudah dengan teknologi</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mb-5">
+    <!-- Materi Section -->
+    <section class="mb-5">
+      <div class="card shadow">
+        <div class="card-body">
+          <h2 class="card-title text-2xl font-semibold mb-3">Materi: Algoritma Dasar</h2>
+          <p class="card-text">
+            Algoritma adalah urutan langkah-langkah logis yang digunakan untuk menyelesaikan suatu masalah.
+            Dalam informatika, algoritma menjadi dasar dalam penulisan program komputer.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form Section -->
+    <section>
+      <div class="card shadow">
+        <div class="card-body">
+          <h3 class="card-title text-xl font-semibold mb-3">Komentar & Umpan Balik</h3>
+          <form id="feedbackForm">
+            <div class="mb-3">
+              <label for="nama" class="form-label">Nama:</label>
+              <input type="text" id="nama" name="nama" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label for="komentar" class="form-label">Komentar:</label>
+              <textarea id="komentar" name="komentar" class="form-control" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Kirim</button>
+            <div id="alertSuccess" class="alert alert-success mt-3 d-none" role="alert">
+              Komentar berhasil dikirim!
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    &copy; 2025 Media Pembelajaran Informatika. All rights reserved.
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
